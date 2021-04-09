@@ -1,0 +1,19 @@
+{
+  "streams": [
+    {
+      "title": "react and redux",
+      "description": "the best course on react",
+      "id": 1
+    },
+    {
+      "title": "Flutter course",
+      "description": "best course on udemy",
+      "id": 2
+    },
+    {
+      "title": "sdsdaef",
+      "description": "wdeaf",
+      "id": 3
+    }
+  ]
+}
