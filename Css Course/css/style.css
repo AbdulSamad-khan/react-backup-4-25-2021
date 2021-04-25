@@ -1,0 +1,54 @@
+/* Precedance rule or specifity in selectors
+1.Inline Styling
+2.Id Selector
+3.Class Selector
+4. Element Selector
+*/
+
+h2 {
+  color: blue;
+}
+.subtitle {
+  color: purple;
+}
+#sub-title {
+  color: green;
+}
+
+h2:hover {
+  color: red;
+}
+
+/* PsuedoSelector */
+
+/* li:nth-child(2) {
+  color: steelblue;
+} */
+th:only-child {
+  color: purple;
+}
+
+/* Advanced Selectors */
+
+/*Adjacent Sibling Selector : select anchor only if it followed immediately 
+by h2 and share same parent*/
+h2 + a {
+  color: red;
+}
+
+/*General Sibling Selector : select anchor only if it followed  by h2 (Not neccesarliy immediate )
+ and share same parent*/
+h2 ~ a {
+  color: red;
+}
+/*Child combinator: It matches only those elements matched by the second selector that 
+are the direct children of elements matched by the first*/
+ul > li {
+  color: steelblue;
+}
+
+/*Descendent combinator: typically represented by a single space ( ) character — All the 
+li will be selected no matter if they are direct chidren or not */
+ul li {
+  color: green;
+}

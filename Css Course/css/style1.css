@@ -1,0 +1,37 @@
+body {
+  /* rgba = red green blue aplpha */
+  background: rgba(230, 103, 30, 0.2);
+}
+.section {
+  width: 800px;
+  height: 400px;
+  /* 
+  background: linear-gradient(to top left, #5ee692, rgba(107, 1, 60)); */
+  background: blue;
+  background: url("../img/sample4.png");
+  background-size: 300px 100px; /* contain or cover  */
+  background-repeat: no-repeat;
+}
+h2[class="sub-title"] {
+  color: green;
+}
+/*if any src path starts with ../img/ then selectes it */
+img[src^="../img/"] {
+  border: 2px solid black;
+}
+
+/* if any src path contains this string isl/ selectes it*/
+img[src*="isl/"] {
+  border-radius: 10px;
+}
+/* selects all elements with a class attribute that contains a space-separated list of words*/
+h2[class~="article-title"] {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Gradients  */
+.radial {
+  background: radial-gradient(circle, red 20%, blue 40%, green 60%);
+  width: 400px;
+  height: 400px;
+}
